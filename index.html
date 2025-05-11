@@ -15,21 +15,22 @@
         <h1>Wildlife Park</h1>
     </header>
     <nav>
-        <a href="Aficanarea.html">African Area</a>
+        <article class="home space"><a href="index.html">Home</a></article>
+        <article class="space"><a href="Aficanarea.html">African Area</a>
         <a href="American.html">American Area</a>
         <a href="Artic.html">Artic Area</a>
-        <a href="Us.html">About Us</a>
+        <a href="Us.html">About Us</a></article>
     
 </nav>
        
              <div>
-             <article><img src="arctic-fox-2-sridhar-chilimuri.jpg" alt="Artic Fox" >
+             <article class="animal"><img src="arctic-fox-2-sridhar-chilimuri.jpg" alt="Artic Fox" >
             <p>Artic Fox, Pōkiha - Sridhar Chilimuri</p></article> 
-            <article><img src="lion-2-leonard-von-bibra.jpg" alt="Lion and cubs">
+            <article class="animal"><img src="lion-2-leonard-von-bibra.jpg" alt="Lion and cubs">
             <p>Lion, Raiona - Leonard von Bibra</p></article>
-            <article ><img src="polar-bear-2-peter-neumann.jpg" alt="Polar Bear in water">
+            <article class="animal"><img src="polar-bear-2-peter-neumann.jpg" alt="Polar Bear in water">
             <p>Polar Bear, Pea - Peter Neumann</p></article>
-            <article><img src="fur-seal-1-karen-lau.jpg" alt="Fur Seal smiling on a rock">
+            <article class="animal"><img src="fur-seal-1-karen-lau.jpg" alt="Fur Seal smiling on a rock">
             <p>Fur Seal, Kekeno - Karen Lau</p></article>
         </div>
     <main>
@@ -64,7 +65,7 @@
         
         header{
             grid-area: h;
-            background-color: D12B05;
+            
         }
 
         h1 {
@@ -78,36 +79,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 110;
-            
+            font-size: 150;
+            background-color: D12B05;
         }
 
         
         nav {
             background-color: DB5502;
             grid-area: n;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-around;
+           
+            
         }
 
         div{
             grid-area: d;
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-auto-rows: 175px;
         }
 
         
 
         img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin: auto;
-            width: 13rem;
+            width: 10rem;
             margin-top: 5%;
             margin-left: 5%;
             background-color: #ff9E1c;
@@ -120,19 +115,35 @@
             font-style: normal;
             font-variation-settings:
                 "wdth" 100;
-             background-color: FF9E1C;   
             text-decoration: none;
             color: white;
-            border-radius: 0.2em;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            border: 1px solid rgba(0, 0, 0, 0.556);
-            box-shadow: 2px 2px #0000009a;
-            font-size: 20;
-            
+            font-size: 30;
             }
+
+       
             
-        article {
+        a:hover{
+            color: white;
+                background-color: #ff9E1c;
+                border: 1px solid D12B05;
+            box-shadow: 2px 2px #4407079a;   
+            }
+
+        .home{
+            border: 1px solid D12B05;
+            color: white;
+            background-color: #ff9E1c;
+        }
+
+        .space{
+             display:flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            
+        }
+
+        .animal {
             background-color: #ff9E1c; 
             margin: auto;
         }
@@ -150,6 +161,7 @@
             flex-wrap: wrap;
         justify-content: wrap;  
         margin: 5px;
+        font-size: 20;
     }
 
         h2{
