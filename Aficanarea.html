@@ -1,6 +1,4 @@
-<body>
-
-    <head>
+<head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
@@ -11,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     </head>
+    <body>
     <header>
         <h1>African Area</h1>
     </header>
@@ -32,7 +31,7 @@
 
 
     <main>
-        <article class="main">
+        <article class="step">
             <p>Step into the African Savannah
 
                 Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
@@ -45,7 +44,7 @@
                 animal experts. Unleash your inner explorer and experience the African Savannah today!
             </p>
         </article>
-        </article class="lion">
+        <article class="step">
         <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and
             Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park,
             you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest
@@ -63,7 +62,7 @@
             <p>Lion, Raiona - Jeremy Avery</p>
         </article>
 </div>
-        <article class="lion">
+        <article class="step">
             <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.
             </p>
         </article>
@@ -83,18 +82,17 @@
             <style>
                 body {
                     display: grid;
-                    grid: "h h h h h" auto "n n n n n" auto "m m . d d" auto "l l . d d" auto "f f f f f" auto / auto auto auto auto auto;
+                    grid: "h h h h h" auto
+                          "n n n n n" auto 
+                          "m m . d d" auto 
+                          "m m . d d" auto 
+                          "f f f f f" auto / auto auto auto auto auto;
                 }
 
                 header {
                     grid-area: h;
 
                 }
-
-                .lion {
-                    grid-area: l;
-                }
-
 
 
                 h1 {
@@ -108,13 +106,13 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 150;
-                    background-color: D12B05;
+                    font-size: 150px;
+                    background-color: #D12B05;
                 }
 
 
                 nav {
-                    background-color: DB5502;
+                    background-color: #DB5502;
                     grid-area: n;
                     display: flex;
                     align-items: center;
@@ -125,7 +123,6 @@
 
                 div {
                     grid-area: d;
-
                 }
 
 
@@ -146,18 +143,18 @@
                         "wdth" 100;
                     text-decoration: none;
                     color: white;
-                    font-size: 30;
+                    font-size: 30px;
                 }
 
                 a:hover {
                     color: white;
                     background-color: #ff9E1c;
-                    border: 1px solid D12B05;
+                    border: 1px solid #D12B05;
                     box-shadow: 2px 2px #4407079a;
                 }
 
                 .home {
-                    border: 1px solid D12B05;
+                    border: 1px solid #D12B05;
                     color: white;
                     background-color: #ff9E1c;
                 }
@@ -183,7 +180,7 @@
                     
                 }
 
-                .main {
+                .step {
                     grid-area: m;
                 }
 
@@ -191,7 +188,7 @@
                     font-family: "Chewy", system-ui;
                     font-weight: 400;
                     font-style: normal;
-                    background-color: FF9E1C;
+                    background-color: #FF9E1C;
                     color: white;
                     margin: 1%;
                     display: flex;
@@ -206,11 +203,11 @@
                     font-weight: 400;
                     font-style: normal;
                     color: white;
-                    font-size: 15;
+                    font-size: 15px;
                 }
 
                 footer {
-                    background-color: DB5502;
+                    background-color: #DB5502;
                     grid-area: f;
                 }
             </style>
