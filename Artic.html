@@ -1,201 +1,263 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>African Area</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>African Area</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a  href="Aficanarea.html">African Area</a>
+        <a href="American.html">American Area</a>
+        <a class="home" href="Artic.html">Arctic Area</a>
+        <a href="Us.html">About Us</a>
+    </nav>
+
+
+
+
+
+
+    <main>
+        <div>
+            <article class="kingdom"><p>Explore the Enchanting Arctic Tundra
+<br></br>
+Embrace the chill and journey to the frozen wonders of the Arctic, where you'll encounter some of the world's most remarkable cold-weather inhabitants. Our Arctic area features the awe-inspiring polar bear, the cunning arctic fox, and the charming fur seal, each perfectly adapted to life in the icy tundra.
+<br></br>
+Witness these magnificent animals in action, as you learn about their unique adaptations, survival strategies, and the challenges they face in a rapidly changing environment. Take part in our interactive presentations, meet our dedicated team of Arctic experts, and gain a deeper appreciation for the incredible creatures that call the Arctic home.
+
+            </p></article>
+            <article class="scene"><img src="torsten-dederichs-MC4vKEsIKVY-unsplash.jpg" alt="Artic">
+                <p>heajgnkjnjkjnkjnidfi</p>
+            </article>
+        </div>
+
+        <div>
+            <article class="kingdom"><p>
+                Meet our playful arctic fox pair, Snow and Ice. These charming, nimble creatures are known for their striking white winter coats and incredible adaptability in the frigid Arctic climate. Observe Snow and Ice as they display their keen hunting instincts, agility, and social behaviors in our Arctic area. Discover more about their remarkable adaptations, their complex family structure, and the ongoing conservation efforts aimed at protecting their natural habitats and populations.
+            </p>
+            </article>
+                <article class="animal"><img src="arctic-fox-1-jonatan-pie (1).jpg">
+                    <p>Artic Fox, _____ - Jonatan Pie</p>
+                </article>
+            <article class="lion">
+                <article class="animal"><img src="arctic-fox-2-sridhar-chilimuri.jpg" alt="Lion and cubs">
+                    <p>Artic Fox, Raiona - Sridhar Chilimuri</p>
+                </article>
+                <article class="animal"><img src="arctic-fox-3-teresa.jpg">
+                    <p>Aric Fox, Raiona - Jeremy Avery</p>
+                </article>
+            </article>
+        </div>
+
+
+        <div>
+            <article class="kingdom"><p>Introducing our majestic polar bear duo, Aurora and Frost. These awe-inspiring creatures are the largest land carnivores on Earth and are perfectly adapted to life in the harsh Arctic environment. Watch as Aurora and Frost demonstrate their incredible swimming and hunting skills in our expansive Arctic habitat. Learn about their unique adaptations, their critical role in the Arctic ecosystem, 
+                and the urgent conservation efforts in place to address the threats they face due to climate change and habitat loss.
+            </p></article>
+            <article class="animal">
+                <img src="polar-bear-1-jason-hillier.jpg">
+                <p>Cheetah, _______ - Rodrigo Ardilha</p>
+            </article>
+            <article class="animal">
+                <img src="polar-bear-2-peter-neumann.jpg">
+                <p>Cheetah, _______ - Christin Noelle</p>
+            </article>
+        </div>
+
+        <div>
+            <article class="kingdom"><p>
+                Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female.
+                These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns,
+                which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully
+                browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique
+                physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.
+            </p></article>
+            <article class="animal">
+                <img src="giraffe-1-nikolay-tchaouchev.jpg">
+                <p>Giraffe, _______ - Nikolay Tchaouchev</p>
+            </article>
+            <article class="animal">
+                <img src="giraffe-2-sian-cooper.jpg">
+                <p>Giraffe, _______ - Sian Cooper</p>
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <h2> &copy; Samantha Hansen, Craighead Diocesan School, 2025</h2>
+    </footer>
     <style>
         body {
             display: grid;
-            grid-template-areas:
-                "h h h h h"
-                "n n n n n"
-                "m m . d d"
-                "l l . d d"
-                "f f f f f";
-            grid-template-columns: auto auto auto auto auto;
-            background-color: #FEE8D6;
+            grid: "h h h h h"
+                auto "n n n n n"
+                auto "m . . . a"
+                auto "m . . . a"
+                auto "f f f f f" auto / auto auto auto auto auto;
         }
 
         header {
             grid-area: h;
+
         }
+
+.kingdom{
+    grid-area: m;
+    display: flex;
+}
 
         h1 {
             font-family: "Kablammo", system-ui;
-            font-size: 150px;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "MORF" 0;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 150px;
             background-color: #D12B05;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
         }
+
 
         nav {
-            grid-area: n;
             background-color: #DB5502;
+            grid-area: n;
             display: flex;
+            align-items: center;
+            justify-content: center;
             justify-content: space-around;
-            padding: 10px;
+
         }
 
-        nav a {
+
+        div {
+            
+            display: flex;
+        }
+
+
+        img {
+            margin: auto;
+            width: 10rem;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+
+        a {
             font-family: "DynaPuff", system-ui;
-            font-size: 30px;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
             text-decoration: none;
             color: white;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
         }
 
-        nav a:hover {
+        a:hover {
+            color: white;
             background-color: #ff9E1c;
             border: 1px solid #D12B05;
             box-shadow: 2px 2px #4407079a;
         }
 
         .home {
+border: 1px solid D12B05;
+            color: white;
             background-color: #ff9E1c;
-            border: 1px solid #D12B05;
-            padding: 5px;
         }
 
-        main {
-            grid-area: m;
-            padding: 10px;
+        .scene {
+            background-color: #ff9E1c;
+            margin: auto;
+        
         }
 
-        .lion {
-            grid-area: l;
-            padding: 10px;
+        .scene p {
+            color: transparent;
         }
 
-        .scene,
+
+body{
+            background-color: rgb(255, 240, 211);
+        }
+
         .animal {
-    background-color: #ff9E1c;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
-    margin: 10px;
-}
-
-.animal img {
-    width: 10rem;
-    margin-bottom: 5px;
-}
-
-.animal p {
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    text-align: right;
-    margin: 0;
-}
-
-
-        img {
-            width: 10rem;
-            display: block;
-            margin: 10px auto;
+            background-color: #ff9E1c;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 10px;
+            margin: 5px;
+            grid-area: a;
         }
+
+        .animal a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            align-self: flex-end;
+        }
+
+        .animal img {
+            width: 10rem;
+            margin: 5px;
+        }
+
+        .animal p {
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+
+
 
         p {
             font-family: "Chewy", system-ui;
-            font-size: 20px;
+            font-weight: 400;
+            font-style: normal;
             background-color: #FF9E1C;
             color: white;
-            padding: 10px;
+            margin: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: wrap;
+            margin: 5px;
+            font-size: 20;
+            padding: 5px;
         }
 
         h2 {
             font-family: "Chewy", system-ui;
-            font-size: 15px;
+            font-weight: 400;
+            font-style: normal;
             color: white;
-            text-align: center;
+            font-size: 15px;
         }
 
         footer {
-            grid-area: f;
             background-color: #DB5502;
-            padding: 10px;
-        }
-
-        .space {
-            display: flex;
-            justify-content: center;
+            grid-area: f;
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>African Area</h1>
-    </header>
-
-    <nav>
-        <div class="space"><a href="index.html">Home</a></div>
-        <div class="home space"><a href="Aficanarea.html">African Area</a></div>
-        <div class="space">
-            <a href="American.html">American Area</a>
-            <a href="Artic.html">Artic Area</a>
-            <a href="Us.html">About Us</a>
-        </div>
-    </nav>
-
-    <div class="scene">
-        <img src="damian-patkowski-T-LfvX-7IVg-unsplash.jpg" alt="Artic Fox">
-        <p>HIUHIUHIUhidddduhiu</p>
-    </div>
-
-    <main>
-        <article>
-            <p>
-                Step into the African Savannah<br><br>
-                Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our African area is home to some of the continent's most iconic animals, including the majestic lion, the swift cheetah, and the towering giraffe.
-                <br><br>
-                Stroll through our park and observe these magnificent creatures up close, while learning about their natural habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts. Unleash your inner explorer and experience the African Savannah today!
-            </p>
-        </article>
-
-        <article class="lion">
-            <p>
-                Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.
-            </p>
-        </article>
-
-        <div class="animal">
-            <img src="lion-2-leonard-von-bibra.jpg" alt="Lion and cubs">
-            <p>Lion, Raiona - Leonard von Bibra</p>
-        </div>
-        <div class="animal">
-            <img src="lion-3-bisakha-datta.jpg" alt="Lion">
-            <p>Lion, Raiona - Bisakha Datta</p>
-        </div>
-        <div class="animal">
-            <img src="lion-1-jeremy-avery.jpg" alt="Lion">
-            <p>Lion, Raiona - Jeremy Avery</p>
-        </div>
-
-        <article class="lion">
-            <p>
-                Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.
-            </p>
-        </article>
-
-        <div class="animal">
-            <img src="cheetah-1-rodrigo-ardilha.jpg" alt="Cheetah">
-            <p>Cheetah, _______ - Rodrigo Ardilha</p>
-        </div>
-        <div class="animal">
-            <img src="cheetah-2-christin-noelle.jpg" alt="Cheetah">
-            <p>Cheetah, _______ - Christin Noelle</p>
-        </div>
-    </main>
-
-    <footer>
-        <h2>&copy; Samantha Hansen, Craighead Diocesan School, 2025</h2>
-    </footer>
 </body>
-</html>
