@@ -29,9 +29,9 @@
 
     <main>
         <div>
-            <article class="kingdom"><p>Step into the African Savannah
-                <br></br>
-                Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
+            <article class="kingdom">
+                <h3>Step into the African Savannah</h3>
+                <p>Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our
                 African area is home to some of the continent's most iconic animals, including the majestic lion, the
                 swift cheetah, and the towering giraffe.
                 <br></br>
@@ -40,13 +40,16 @@
                 our daily animal encounters, feeding sessions, and interactive talks led by our passionate team of
                 animal experts. Unleash your inner explorer and experience the African Savannah today!
             </p></article>
-            <article class="scene"><img src="damian-patkowski-T-LfvX-7IVg-unsplash.jpg" alt="Artic Fox">
-                <p>heajgnkjnjkjnkjnidfi</p>
-            </article>
+            <article class="scene"><img src="damian-patkowski-T-LfvX-7IVg-unsplash.jpg">
+                    <p>hfieurhiiuergdfiiiijr</p>
+                </article>
+
         </div>
 
         <div>
-            <article class="kingdom"><p>
+            <article class="kingdom">
+                <h3>Lions, Raiona:</h3>
+                <p>
                 Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala
                 and
                 Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park,
@@ -55,7 +58,9 @@
                 together. Learn about their hunting techniques, their roles within the pride, and the conservation
                 efforts
                 in place to protect these incredible animals in the wild.
-            </p>
+            <br></br>
+        <br></br><br></br><br></br>
+        <br></br></p>
             </article>
                 <article class="animal"><img src="lion-3-bisakha-datta.jpg">
                     <p>Lion, Raiona - Bisakha Datta</p>
@@ -72,37 +77,44 @@
 
 
         <div>
-            <article class="kingdom"><p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the
+            <article class="kingdom">
+                <h3>Cheetahs, Tīta:</h3>
+                <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the
                 fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter
                 of seconds. Watch them in action as they display their extraordinary agility and acceleration during our
                 daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in
                 the wild, and the initiatives aimed at safeguarding their population.
-            </p></article>
+            <br></br>
+        </p></article>
             <article class="animal">
                 <img src="cheetah-1-rodrigo-ardilha.jpg">
-                <p>Cheetah, _______ - Rodrigo Ardilha</p>
+                <p>Cheetah, Tīta - Rodrigo Ardilha</p>
             </article>
             <article class="animal">
                 <img src="cheetah-2-christin-noelle.jpg">
-                <p>Cheetah, _______ - Christin Noelle</p>
+                <p>Cheetah, Tīta - Christin Noelle</p>
             </article>
         </div>
 
         <div>
-            <article class="kingdom"><p>
+            <article class="kingdom">
+                <h3>Giraffes, Kakiroa:</h3>
+                <p>
                 Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female.
                 These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns,
                 which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully
                 browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique
                 physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.
-            </p></article>
+            <br></br>
+        <br></br><br></br><br></br>
+        </p></article>
             <article class="animal">
                 <img src="giraffe-1-nikolay-tchaouchev.jpg">
-                <p>Giraffe, _______ - Nikolay Tchaouchev</p>
+                <p>Giraffe, Kakiroa - Nikolay Tchaouchev</p>
             </article>
             <article class="animal">
                 <img src="giraffe-2-sian-cooper.jpg">
-                <p>Giraffe, _______ - Sian Cooper</p>
+                <p>Giraffe, Kakiroa - Sian Cooper</p>
             </article>
         </div>
 
@@ -113,21 +125,21 @@
     <style>
         body {
             display: grid;
-            grid: "h h h h h"
-                auto "n n n n n"
-                auto "m . . . a"
-                auto "m . . . a"
-                auto "f f f f f" auto / auto auto auto auto auto;
+            grid: "h h h h h" auto
+                 "n n n n n" auto
+                 "m m . a a" auto
+                 "m m . a a" auto
+                 "f f f f f" auto / auto auto auto auto auto;
         }
 
         header {
             grid-area: h;
-
+            background-color: #D12B05;
         }
 
 .kingdom{
     grid-area: m;
-    display: flex;
+    
 }
 
         h1 {
@@ -145,6 +157,20 @@
             background-color: #D12B05;
         }
 
+h3{
+            font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            text-decoration: none;
+            color: white;
+            background-color: #FF9E1C;
+            padding: 5px;
+            margin: 0px;
+            font-size: 24px;
+        }
 
         nav {
             background-color: #DB5502;
@@ -194,7 +220,7 @@
         }
 
         .home {
-border: 1px solid D12B05;
+border: 1px solid #D12B05;
             color: white;
             background-color: #ff9E1c;
         }
@@ -202,7 +228,6 @@ border: 1px solid D12B05;
         .scene {
             background-color: #ff9E1c;
             margin: auto;
-        
         }
 
         .scene p {
